@@ -8,10 +8,9 @@ This repository is a template designed to help you enforce consistent coding sta
 2. [Features](#features)
 3. [Prerequisites](#prerequisites)
 4. [Setup Instructions](#setup-instructions)
-    - [1. Clone the Repository](#1-clone-the-repository)
-    - [2. Install VSCode Extensions](#2-install-vscode-extensions)
-    - [3. Install Dependencies](#3-install-dependencies)
-    - [4. Start Coding](#4-start-coding)
+    - [1. Install VSCode Extensions](#1-install-vscode-extensions)
+    - [2. Install Dependencies](#2-install-dependencies)
+    - [3. Start Coding](#3-start-coding)
 5. [File Descriptions](#file-descriptions)
 6. [How to Use the Linting Tools](#how-to-use-the-linting-tools)
 7. [Why Standards Matter](#why-standards-matter)
@@ -49,17 +48,7 @@ Before you begin, ensure you have the following:
 
 ## **Setup Instructions**
 
-### **1. Clone the Repository**
-Clone this repository to your local machine and navigate into the project directory:
-
-```bash
-git clone https://github.com/MederickBernier/ConfigFiles
-cd <repository-directory>
-```
-
----
-
-### **2. Install VSCode Extensions**
+### **1. Install VSCode Extensions**
 Install the following extensions from the VSCode Marketplace:
 - [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
@@ -68,7 +57,7 @@ Install the following extensions from the VSCode Marketplace:
 
 ---
 
-### **3. Install Dependencies**
+### **2. Install Dependencies**
 Run the following single command to install all required development dependencies:
 
 ```bash
@@ -77,7 +66,7 @@ npm install eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin es
 
 ---
 
-### **4. Start Coding**
+### **3. Start Coding**
 You’re ready to start coding! All tools will now automatically lint and format your code according to the standards when you save files.
 
 ---
