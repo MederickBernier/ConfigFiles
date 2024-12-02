@@ -80,11 +80,11 @@ The `.vscode/settings.json` file contains essential configurations for linting a
    {
      "editor.formatOnSave": true,
      "editor.codeActionsOnSave": {
-       "source.fixAll": true
+      "source.fixAll": "always"
      },
      "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
      "stylelint.validate": ["css", "scss"],
-     "files.eol": ""
+     "files.eol": "\n",
    }
    ```
 
