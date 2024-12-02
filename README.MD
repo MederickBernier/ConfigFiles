@@ -196,3 +196,54 @@ Employers expect developers to follow coding standards and use tools like ESLint
 ## **Next Steps**
 
 Feel free to extend this setup to include additional tools or configurations as needed for your projects. Happy coding!
+
+
+---
+
+## **Add Useful Scripts to `package.json`**
+
+You can define scripts in your `package.json` file to make running linting and formatting tasks more convenient. Add the following scripts to the `scripts` section of your `package.json`:
+
+```json
+"scripts": {
+  "lint:js": "eslint . --ext .js,.jsx,.ts,.tsx",
+  "lint:css": "stylelint \"**/*.css\" \"**/*.scss\"",
+  "lint:fix": "npm run lint:js -- --fix && npm run lint:css -- --fix",
+  "format": "prettier --write ."
+}
+```
+
+### **Explanation of Scripts**
+1. **`lint:js`:** Runs ESLint on all JavaScript, TypeScript, and JSX/TSX files.
+2. **`lint:css`:** Runs Stylelint on all CSS and SCSS files.
+3. **`lint:fix`:** Runs both JavaScript/TypeScript and CSS/SCSS linting with auto-fixing enabled.
+4. **`format`:** Runs Prettier to format all files in the project.
+
+---
+
+### **How to Use These Scripts**
+After adding these scripts to `package.json`, you can run them using `npm run`:
+
+1. **Run ESLint:**
+   ```bash
+   npm run lint:js
+   ```
+
+2. **Run Stylelint:**
+   ```bash
+   npm run lint:css
+   ```
+
+3. **Fix Linting Issues:**
+   ```bash
+   npm run lint:fix
+   ```
+
+4. **Format Code with Prettier:**
+   ```bash
+   npm run format
+   ```
+
+---
+
+By adding these scripts to your project, you can streamline your workflow and ensure consistent code quality across your project.
