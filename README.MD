@@ -10,7 +10,8 @@ This repository is a template designed to help you enforce consistent coding sta
 4. [Setup Instructions](#setup-instructions)
     - [1. Install VSCode Extensions](#1-install-vscode-extensions)
     - [2. Install Dependencies](#2-install-dependencies)
-    - [3. Start Coding](#3-start-coding)
+    - [3. Add VSCode Settings](#3-add-vscode-settings)
+    - [4. Start Coding](#4-start-coding)
 5. [File Descriptions](#file-descriptions)
 6. [How to Use the Linting Tools](#how-to-use-the-linting-tools)
 7. [Why Standards Matter](#why-standards-matter)
@@ -58,7 +59,7 @@ Install the following extensions from the VSCode Marketplace:
 ---
 
 ### **2. Install Dependencies**
-Run the following single command to install all required development dependencies:
+Download all the configs files and run the following single command to install all required development dependencies:
 
 ```bash
 npm install eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-react stylelint stylelint-config-standard prettier eslint-config-prettier eslint-plugin-prettier --save-dev
@@ -66,7 +67,33 @@ npm install eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin es
 
 ---
 
-### **3. Start Coding**
+### **3. Add VSCode Settings**
+The `.vscode/settings.json` file contains essential configurations for linting and formatting. Follow these steps to apply it:
+
+1. Open your project in VSCode.
+2. Navigate to the **Explorer** view (Ctrl+Shift+E).
+3. Locate or create a folder named `.vscode` in the root of your project.
+4. Inside the `.vscode` folder, create a file named `settings.json`.
+5. Copy and paste the following content into `settings.json`:
+
+   ```json
+   {
+     "editor.formatOnSave": true,
+     "editor.codeActionsOnSave": {
+       "source.fixAll": true
+     },
+     "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+     "stylelint.validate": ["css", "scss"],
+     "files.eol": "
+"
+   }
+   ```
+
+6. Save the file. Your editor is now configured to auto-format and lint your files on save.
+
+---
+
+### **4. Start Coding**
 You’re ready to start coding! All tools will now automatically lint and format your code according to the standards when you save files.
 
 ---
