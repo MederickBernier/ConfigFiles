@@ -84,8 +84,7 @@ The `.vscode/settings.json` file contains essential configurations for linting a
      },
      "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
      "stylelint.validate": ["css", "scss"],
-     "files.eol": "
-"
+     "files.eol": ""
    }
    ```
 
