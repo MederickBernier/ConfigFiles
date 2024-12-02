@@ -67,14 +67,17 @@ npm install eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin es
 
 ---
 
-### **3. Add VSCode Settings**
 The `.vscode/settings.json` file contains essential configurations for linting and formatting. Follow these steps to apply it:
 
 1. Open your project in VSCode.
-2. Navigate to the **Explorer** view (Ctrl+Shift+E).
-3. Locate or create a folder named `.vscode` in the root of your project.
-4. Inside the `.vscode` folder, create a file named `settings.json`.
-5. Copy and paste the following content into `settings.json`:
+
+2. Open the **Command Palette** by pressing:
+   - `Ctrl+Shift+P` (Windows/Linux)
+   - `Cmd+Shift+P` (macOS)
+
+3. Type `Preferences: Open Workspace Settings (JSON)` and select it. This will open or create a `settings.json` file specific to your project.
+
+4. Copy and paste the following content into the file:
 
    ```json
    {
